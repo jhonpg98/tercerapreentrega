@@ -1,0 +1,304 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  background: #000;
+  color: #fff;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.9em;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  overflow: auto;
+  padding: 0 20px;
+}
+
+.large {
+  font-size: 18px;
+}
+
+.display-1 {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  font-size: 15px;
+  padding: 12px 23px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+.btn-color {
+  background: #EC5C2C;
+  color: #fff;
+  border: 1px solid #EC5C2C;
+}
+
+form label {
+  display: inline-block;
+  margin-bottom: 6px;
+}
+form .form-group {
+  margin-bottom: 16px;
+}
+form .form-control {
+  width: 100%;
+  padding: 7px 12px;
+  line-height: 1.5;
+  background-color: #fff;
+  border: none;
+  border-radius: 4px;
+}
+form button {
+  width: 100%;
+}
+
+#mainheader {
+  height: 100vh;
+  background: url(/img/FONDO-JHON-PG.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#navbar {
+  overflow: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+#navbar img {
+  height: 60px;
+}
+#navbar a {
+  font-weight: 500;
+}
+#navbar .logo {
+  padding-top: 16px;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+#navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+#navbar ul {
+  display: flex;
+  list-style: none;
+}
+#navbar ul li {
+  margin-left: 40px;
+}
+
+#showcase .container {
+  display: flex;
+  justify-content: flex-end;
+}
+#showcase .container span {
+  display: block;
+  color: #EC5C2C;
+  padding-bottom: 20px;
+}
+#showcase .container .showcase-text {
+  padding-top: 150px;
+}
+
+#about {
+  padding: 50px 0;
+  background: #000000;
+}
+#about .about-row {
+  padding-top: 30px;
+  display: flex;
+}
+#about .about-row-box {
+  padding: 20px;
+}
+#about .about-row-box img {
+  width: 400px;
+  padding-right: 20px;
+  padding-top: 50px;
+}
+
+#features {
+  padding: 80px 0;
+}
+#features .container {
+  display: flex;
+}
+#features .container .features-box {
+  flex: 1;
+  text-align: center;
+}
+#features .container .features-box p:first-child {
+  font-size: 4rem;
+  font-weight: 300;
+}
+#features .container .features-box p:last-child {
+  color: #EC5C2C;
+}
+
+#services {
+  padding: 60px 0;
+}
+#services h2,
+#services h6 {
+  text-align: center;
+}
+#services .services-row {
+  padding-top: 30px;
+  display: flex;
+}
+#services .services-row-box {
+  padding: 30px;
+  margin: 20px;
+  background: #000000;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+#services .services-row-box img {
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 20px;
+}
+#services .services-row-box h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+}
+
+#work {
+  padding: 80px 0;
+}
+#work h2 {
+  padding-bottom: 50px;
+}
+#work .work-flex {
+  display: flex;
+  gap: 10px;
+}
+#work .work-flex-box {
+  padding: 20px;
+}
+#work .work-flex-box img {
+  width: 100%;
+}
+
+#contact {
+  padding: 80px 0;
+}
+#contact h2 {
+  padding-bottom: 50px;
+  color: #EC5C2C;
+}
+#contact form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#mainfooter {
+  padding: 30px;
+  text-align: center;
+}
+#mainfooter p {
+  font-size: 12px;
+}
+
+@media (max-width: 700px) {
+  .display-1 {
+    font-size: 3rem;
+  }
+  #navbar .container {
+    flex-direction: column;
+  }
+  #navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  #navbar ul li {
+    margin-left: 0;
+    padding: 10px;
+  }
+  #services .services-row {
+    flex-wrap: wrap;
+  }
+  #services .services-row-box {
+    padding: 20px;
+    margin: 10px;
+  }
+  #services .services-row-box img {
+    height: 150px;
+    padding: 10px;
+  }
+  #about {
+    padding: 20px 0;
+  }
+  #about .about-row {
+    padding-top: 0;
+    flex-wrap: wrap;
+  }
+  #contact {
+    padding: 50px 0;
+  }
+  #contact .contact-box {
+    padding: 20px;
+    margin: 0px;
+  }
+  #contact .contact-box form {
+    padding: 20px;
+    width: 100%;
+  }
+}
+#work {
+  padding: 50px 0;
+}
+#work .work-flex {
+  flex-direction: column;
+}
+
+#features {
+  padding: 50px 0;
+}
+#features .container {
+  flex-direction: column;
+}/*# sourceMappingURL=style.css.map */

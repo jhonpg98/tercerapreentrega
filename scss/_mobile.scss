@@ -1,0 +1,70 @@
+@media(max-width: 700px){
+
+.display-1 { font-size: 3rem; }
+    
+    
+#navbar {
+    .container {
+        flex-direction: column;
+    }
+    ul {
+        flex-direction: column;
+        text-align: center;
+        li {
+            margin-left: 0;
+            padding: 10px;
+        }
+    }
+} 
+    
+    
+    #services {
+    .services-row {
+        flex-wrap: wrap;
+        &-box {
+        padding: 20px;
+        margin: 10px;
+        img {
+            height: 150px;
+            padding: 10px;
+        }
+        } 
+    } 
+    } 
+    
+    
+    #about {
+    padding: 20px 0;
+    .about-row {
+        padding-top: 0;
+        flex-wrap: wrap;
+    } 
+    } 
+    
+    
+    #contact {
+    padding: 50px 0;
+    .contact-box {
+        padding:20px;
+        margin: 0px;
+        form {
+        padding: 20px;
+        width: 100%;
+        } 
+    } 
+    } 
+  }
+
+    #work {
+		padding: 50px 0;
+		.work-flex {
+			flex-direction: column;
+		}
+	} 
+
+    #features {
+		padding: 50px 0;
+		.container {
+			flex-direction: column;
+		} 
+	} 
